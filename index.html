@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head> 
+<body>
+    <div id="calculadora">
+        <div id="visor"></div>
+        <div id="botoes">
+            <div id="secao1">
+                <button class="acoes" id="AC">AC</button>
+                <button class="acoes" id="apagar">
+                    <img src="icones/backspace.svg">
+                </button>
+                
+                <button class="numeros" id="_1">1</button>
+                <button class="numeros" id="_2">2</button>
+                <button class="numeros" id="_3">3</button>
+                <button class="numeros" id="_4">4</button>
+                <button class="numeros" id="_5">5</button>
+                <button class="numeros" id="_6">6</button>
+                <button class="numeros" id="_7">7</button>
+                <button class="numeros" id="_8">8</button>
+                <button class="numeros" id="_9">9</button>
+                <button class="numeros" id="_0">0</button>
+                <button id="decimal">.</button>
+            </div>
+            
+            <div id="secao2">
+                <button class="acoes operadores" id="soma">+</button>
+                <button class="acoes operadores" id="subtracao">-</button>
+                <button class="acoes operadores" id="multiplicacao">*</button>
+                <button class="acoes operadores" id="divisao">/</button>
+
+                <button id="igual">=</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
