@@ -1,55 +1,44 @@
 
 body {
     background-color: #A080E6;
-    /*background: linear-gradient(106.85deg, #D1BFF5 1.44%, #480BCB 92.72%);*/
     font-family:Arial, Helvetica, sans-serif;
     color: white;
     box-sizing: border-box;
 } 
 
 div#calculadora {
-    position: absolute;
-    width: 431px;
-    height: 494px;
-    left: 468px;
-    top: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60vw;
+    max-width: 500px;
+    height: 67vh;
     background: #d0c0f3;
     border: 3px solid #FFFFFF;
-    backdrop-filter: blur(4px);
-    /* Note: backdrop-filter has minimal browser support */
-
-    border-radius: 22px;
+    border-radius: 1.8em;
+    margin: 66px auto;
 }
 
 div#visor {
-    position: absolute;
-    width: 325px;
-    height: 58px;
-    left: 53px;
-    top: 50px;
-
+    width: 75%;
     background-color: #A080E6;
-    /*background: linear-gradient(89.84deg, #A080E6 0.14%, #8359DD 99.89%);*/
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
-    border-radius: 10px;
-
+    border-radius: .4em;
     color: white;
     text-align: right;
-    font-size: 20pt;
+    font-size: 2em;
     font-weight: bold;
-    padding: 10px 10px;
+    padding: .3em .3em;
 }
 
 div#botoes {
-    position: absolute;
-    width: 253px;
-    left: 85px;
-    top: 154px;
-
+    width: 70%;
     border-radius: 20px;
     display: flex;
-    align-content: baseline;
+    justify-content: center;
+    /* align-content: ; */
 }
 
 div#secao2 {
@@ -61,9 +50,9 @@ div#secao2 {
 
 div#secao1  {
     display: inline-grid;
-    grid-template-columns: 50px 50px 50px;
-    column-gap: 14px;
-    row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.1em;
+    row-gap: 1.3em;
 }
 
 button {
@@ -71,7 +60,7 @@ button {
     height: 44px;
     border-color: white;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: .3em;
     border-width: 1.5px;
     color: white;
     background: #d0c0f3;
@@ -83,7 +72,7 @@ button.acoes {
 }
 
 button.operadores {
-    font-size: 18pt;
+    font-size: 1.3em;
 }
 
 button.numeros {
