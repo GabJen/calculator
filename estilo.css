@@ -31,6 +31,7 @@ div#visor {
     font-size: 2em;
     font-weight: bold;
     padding: .3em .3em;
+    height: 1.8em;
 }
 
 div#botoes {
